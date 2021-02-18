@@ -1,5 +1,5 @@
 class Solution {
-    public int coinChange(int[] coins, int amount) {
+    public int CoinChange(int[] coins, int amount) {
         int max =amount+1;
         int[] dp=new int [amount+1];
         Array.fill(dp,max);

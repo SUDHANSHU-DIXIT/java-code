@@ -6,9 +6,9 @@ class Search
       int count, num, item, array[];
       Scanner sc = new Scanner(System.in);
       System.out.println("Enter number of elements:");
-      num = sc.nextInt(); 
+   num = sc.nextInt(); 
       array = new int[num]; 
-      System.out.println("Enter " + num + " integers");
+    System.out.println("Enter " + num + " integers");
       for (count = 0; count < num; count++)
         array[count] = sc.nextInt();
       System.out.println("Enter the search value:");

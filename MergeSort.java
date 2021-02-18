@@ -3,19 +3,18 @@ public class MergeSort {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the size of the Array: ");
-    int size_of_arry = sc.nextInt(); 
-    int arr[] = new int[size_of_arry];
+    int sd = sc.nextInt(); 
+    int arr[] = new int[sd];
     System.out.println("Enter Array Elements ");
-    for (int i = 0; i < size_of_arry; i++)
+    for (int i = 0; i < sd; i++)
       arr[i] = sc.nextInt(); 
-    arr = Merge_sort(arr, size_of_arry);
+    arr = Merge_sort(arr, sd);
     System.out.println("Array after Merge Sort is: ");
-    for (int i = 0; i < size_of_arry; i++)
+    for (int i = 0; i < sd; i++)
       System.out.print(arr[i] + " ");
     System.out.println("\n");
   }
-
-  static int[] Merge_sort(int arr[], int size) {
+ static int[] Merge_sort(int arr[], int size) {
     if (size > 1) {
       int mid = size / 2;
       int[] first = Arrays.copyOfRange(arr, 0, mid);
