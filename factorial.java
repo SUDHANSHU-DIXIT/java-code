@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class factorial76
+class factorial
 
 {
   public static void main(String args[])

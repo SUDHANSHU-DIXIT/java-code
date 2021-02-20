@@ -3,20 +3,20 @@ public class Armstrong {
 
     public static void main(String[] args) {
 
-        int num, number, temp, total = 0;
+        int  number, temp, count = 0;
         Scanner in = new Scanner(System.in);
-        num= in.nextInt();
-        number = num;
+       int n= in.nextInt();
+        number = n;
         while (number != 0)
         {
             temp = number % 10;
-            total = total + temp*temp*temp;
-            number /= 10;
+            count = count + temp*temp*temp;
+            number =number/ 10;
         }
 
-        if(total == num)
-            System.out.println(num + " is an Armstrong number");
+        if(count == n)
+            System.out.println(n + " is an Armstrong number");
         else
-            System.out.println(num + " is not an Armstrong number");
+            System.out.println(n + " is not an Armstrong number");
     }
 }
